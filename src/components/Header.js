@@ -3,13 +3,13 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            MOVIE FLEX
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -17,19 +17,29 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link" aria-current="page" href="#">
                 Home
               </a>
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 Features
               </a>
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 Pricing
               </a>
+            </div>
+            <div className="btn-main">
+              <div className="btn-group">
+                <button type="button" className="btn btn-log">
+                  Sign In
+                </button>
+                <button type="button" className="btn btn-log">
+                  Sign Up
+                </button>
+              </div>
             </div>
           </div>
         </div>
