@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             MOVIE FLEX
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,29 +21,33 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" aria-current="page" href="#">
+            {/* <div className="navbar-nav">
+              <Link className="nav-link" aria-current="page" to="/">
                 Home
-              </a>
-              <a className="nav-link" href="#">
-                Features
-              </a>
-              <a className="nav-link" href="#">
+              </Link>
+              <Link className="nav-link" to="/">
+                Trending
+              </Link>
+              <Link className="nav-link" to="/">
                 Pricing
-              </a>
-            </div>
-            <div className="btn-main">
-              <div className="btn-group">
+              </Link> */}
+          </div>
+          <div className="btn-main">
+            <div className="btn-group">
+              <Link className="nav-link" to="/signin">
                 <button type="button" className="btn btn-log">
                   Sign In
                 </button>
+              </Link>
+              <Link className="nav-link" to="/signup">
                 <button type="button" className="btn btn-log">
                   Sign Up
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
+        {/* </div> */}
       </nav>
     </div>
   );

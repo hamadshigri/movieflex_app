@@ -2,7 +2,7 @@
   background-color: #000;
 }
 .navbar-brand:focus, .nav-link:hover {
-  color: white;
+  color: #e50914;
 }
 .navbar-brand:hover {
   color: #e50914;
@@ -70,6 +70,45 @@
   color: #e50914;
   margin: 0 auto;
   width: 100%;
+}
+.main-signin {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  padding-top: 200px;
+}
+.main-signin form {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+}
+.main-signin .text-label {
+  text-align: left;
+}
+.main-signin .signin-btn {
+  width: 30%;
+  padding: 10px 0px;
+  background-color: #E50914;
+  border: none;
+}
+.signup-btn {
+  width: 30%;
+  padding: 10px 0px;
+  background-color: #E50914;
+  border: none;
+  margin-top: 20px;
+}
+.signup-link {
+  text-align: right;
+}
+.signup-link a {
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.8pt;
+}
+.signup-link a:hover{
+  color: #E50914;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

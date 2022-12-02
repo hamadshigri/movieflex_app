@@ -1,15 +1,19 @@
 import "./App.css";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
-import Movies from "./components/Movies";
-import Footer from "./components/Footer";
+import SignIn from "./components/SignIn";
+import Signup from "./components/Signup";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="Main">
       <Header />
-      <Slider />
-      <Movies />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
     </div>
   );
 }
